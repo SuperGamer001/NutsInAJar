@@ -25,7 +25,8 @@ namespace NutsInAJar
 
         private void NormalBTN_Click(object sender, EventArgs e)
         {
-            throw new Exception("Normal difficulty not implemented yet.");
+            var normalGame = new NormalGame();
+            normalGame.Show(); // Use ShowDialog() if you want it modal
         }
 
         private void HardBTN_Click(object sender, EventArgs e)

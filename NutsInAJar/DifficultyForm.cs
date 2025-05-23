@@ -16,5 +16,21 @@ namespace NutsInAJar
         {
             InitializeComponent();
         }
+
+        private void easyBTN_Click(object sender, EventArgs e)
+        {
+            var easyGame = new EasyGame();
+            easyGame.Show(); // Use ShowDialog() if you want it modal
+        }
+
+        private void NormalBTN_Click(object sender, EventArgs e)
+        {
+            throw new Exception("Normal difficulty not implemented yet.");
+        }
+
+        private void HardBTN_Click(object sender, EventArgs e)
+        {
+            throw new Exception("Hard difficulty not implemented yet.");
+        }
     }
 }

@@ -20,13 +20,13 @@ namespace NutsInAJar
         private void easyBTN_Click(object sender, EventArgs e)
         {
             var easyGame = new EasyGame();
-            easyGame.Show(); // Use ShowDialog() if you want it modal
+            easyGame.Show();
         }
 
         private void NormalBTN_Click(object sender, EventArgs e)
         {
             var normalGame = new NormalGame();
-            normalGame.Show(); // Use ShowDialog() if you want it modal
+            normalGame.Show();
         }
 
         private void HardBTN_Click(object sender, EventArgs e)

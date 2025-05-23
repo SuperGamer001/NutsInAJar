@@ -10,10 +10,12 @@
 
         public void Start(int numberOfNuts, string difficulty = "easy")
         {
-            this.numberOfNuts = numberOfNuts;
+            Random random = new Random();
+            this.numberOfNuts = random.Next(0, numberOfNuts + 1);  
             this.difficulty = difficulty;
             this.attempts = 0;
         }
+
         public bool Guess(string guess)
         {
             this.attempts++;

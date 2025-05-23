@@ -80,7 +80,7 @@
             Controls.Add(MyGuessTXT);
             Controls.Add(label1);
             Name = "NormalGame";
-            Text = "Form2";
+            Text = "Normal";
             Load += NormalGame_Load;
             ResumeLayout(false);
             PerformLayout();

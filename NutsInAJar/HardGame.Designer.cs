@@ -80,7 +80,7 @@
             Controls.Add(MyGuessTXT);
             Controls.Add(label1);
             Name = "HardGame";
-            Text = "HardGame";
+            Text = "Hard";
             Load += HardGame_Load;
             ResumeLayout(false);
             PerformLayout();

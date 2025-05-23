@@ -1,6 +1,6 @@
 ﻿namespace NutsInAJar
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -70,8 +70,9 @@
             AIGuessBTN.TabIndex = 3;
             AIGuessBTN.Text = "The AI will guess";
             AIGuessBTN.UseVisualStyleBackColor = true;
+            AIGuessBTN.Click += AIGuessBTN_Click;
             // 
-            // Form1
+            // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -80,8 +81,8 @@
             Controls.Add(label2);
             Controls.Add(IGuessBTN);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Main";
+            Text = "Nuts In a Jar Game";
             ResumeLayout(false);
             PerformLayout();
         }

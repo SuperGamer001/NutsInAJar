@@ -6,7 +6,9 @@
         string difficulty;
         int attempts;
 
-        public Game() { }
+        public Game() {
+            // No Initialization needed
+        }
 
         public void Start(int numberOfNuts, string difficulty = "easy")
         {
@@ -24,7 +26,22 @@
             {
                 if (guessNumber == this.numberOfNuts)
                 {
-                    MessageBox.Show("Correct! You guessed the right number of nuts.");
+                    if (attempts == 1)
+                    {
+                        if (difficulty == "Hard")
+                        {
+                            MessageBox.Show("HOW DID YOU GET THAT ON YOUR FIRST TRY?! You must be the luckiest person in the world.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wow! You got that on your first try!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Correct! You guessed the right number of nuts in " + this.attempts + " tries.");
+                    }
+                        
                     return true;
                 }
                 else
@@ -55,7 +72,7 @@
                         }
                         else
                         {
-                            if (attempts == 9)
+                            if (attempts == 8)
                             {
                                 MessageBox.Show("Nope! You have now used up all your hints. Try again.");
                             }

@@ -31,7 +31,8 @@ namespace NutsInAJar
 
         private void HardBTN_Click(object sender, EventArgs e)
         {
-            throw new Exception("Hard difficulty not implemented yet.");
+            var hardGame = new HardGame();
+            hardGame.Show();
         }
     }
 }
